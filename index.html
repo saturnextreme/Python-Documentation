@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Python Documentation</title>
+  </head>
+  <body>
+    <section class="nav-main">
+      <nav id="navbar">
+        <header class="nav-header">Python Documentation</header>
+        <ul>
+          <li><a href="#Introduction">Introduction</a></li>
+          <li><a href="#Beginner's_Setup">Beginner's Setup</a></li>
+          <li><a href="#Comments">Comments</a></li>
+          <li><a href="#Print_Statements">Print Statements</a></li>
+          <li><a href="#Input_Statements">Input Statements</a></li>
+          <li><a href="#Hello_World_Program">Hello World Program</a></li>
+          <li><a href="#Variables">Variables</a></li>
+          <li><a href="#Data_Types">Data Types</a></li>
+          <li><a href="#Variable_Scope">Variable Scope</a></li>
+          <li><a href="#Conditional_Statements">Conditional Statements</a></li>
+          <li><a href="#While_Loop">While Loop</a></li>
+          <li><a href="#For_Loop">For Loop</a></li>
+          <li><a href="#List">List</a></li>
+          <li><a href="#Dictionary">Dictionary</a></li>
+          <li><a href="#Tuple">Tuple</a></li>
+          <li><a href="#Sets">Sets</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc" class="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+            <p>1. It is used for:</p>
+            <ul>
+              <li>web development (server-side),</li>
+              <li>software development,</li>
+              <li>mathematics,</li>
+              <li>system scripting.</li>
+            </ul>
+            <p>2. Python syntaxes are diffrentiated as: </p>
+            <ul>
+              <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+              <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+              <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Beginner's_Setup">
+          <header>Beginner's Setup</header>
+          <article>
+            <p>Many PCs and Macs will have python already installed.</p>
+            <p>To check if you have python installed on a Windows PC, search in the start bar for Python or run
+               the following on the Command Line (cmd.exe):
+            </p>
+            <code>C:\Users\Your Name>python --version</code>
+            <p>
+              To check if you have python installed on a Linux or Mac, then on linux
+              open the command line or on Mac open the Terminal and type:
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Comments">
+          <header>Comments</header>
+          <article>
+            <p>Comments are a part of code which doesn't initializes.<br>
+               It give's information about the part of code written.<br>
+               It can be single line comment or multiple line comment.
+            </p>
+            <p>Single line comments are written as: </p>
+            <code>#this is a single line comment. <br>#print("Hello World")</code>
+            <p>Above print statement won't execute as it's a comment.</p>
+            <p>In actuality python doesn't have multilines comment,<br>Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code,<br>
+               and place your comment inside it: </p>
+            <code>
+                """
+                This is a comment
+                written in
+                more than just one line
+                """
+                print("Hello, World!")
+            </code>
+            <p>Above can be defined as a multiline comment.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Print_Statements">
+          <header>Print Statements</header>
+          <article>
+            <p>To print something on the console the code we use is given below: </p>
+            <code>
+              C:\Users\Your Name>python
+            </code>
+            <code>
+              Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32 Type "help", "copyright", "credits" or "license" for more information.
+            </code>
+            <code>print("Hello, World!")</code>
+          </article>
+        </section>
+        <section class="main-section" id="Input_Statements">
+          <header>Input Statements</header>
+          <article>
+            <p>To take input from the console/user we use the command: </p>
+            <code>name = input("Enter your name: ")</code>
+            <code>last_name = input("Enter your last name: ")</code>
+          </article>
+        </section>
+        <section class="main-section" id="Hello_World_Program">
+          <header>Hello World Program</header>
+          <article>
+            <code>print("Enter your name: ")</code>
+            <code>name = input("Your name goes here: ")</code>
+            <code>print("Hello World")</code>
+          </article>
+        </section>
+        <section class="main-section" id="Variables">
+          <header>Variables</header>
+          <article>
+            <p>Variables are something which stores data in it.</p>
+            <p>In python we don't need to define the data type of a variable,</p>
+            <p>It determines dynamically a value needs to be stored.</p>
+            <code>x=5</code>
+            <p>5 is stored as integer</p>
+            <code>name = "Aashay Metekar"</code>
+            <p>string value is stored as string.</p>
+            <code>condition = true</code>
+            <p>True is stored as boolean value.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Data_Types">
+          <header>Data Types</header>
+          <article>
+            <p>Variables are containers for storing data values.</p>
+            <p>Python has no command for declaring a variable.
+               <br>A variable is created the moment you first assign a value to it.</p>
+            <p>Basic variables are: </p>
+            <ul>
+              <li>float,</li>
+              <li>int,</li>
+              <li>string,</li>
+              <li>bool,</li>
+              <li>binary and etc.</li>
+            </ul>
+            <code>
+              x = 4     # x is of type int<br>
+              x = "Sally"   # x is now of type str<br>
+              print(x)
+            </code>
+          </article>
+        </section>
+        <section class="main-section" id="Variable_Scope">
+          <header>Variable Scope</header>
+          <article>
+            <p>A variable created inside a function belongs to the local scope of that function, and can only be used inside that function.</p>
+            <code>
+              def myfunc():<br>
+              &nbsp; x = 300<br>
+              &nbsp; print(x)<br>
+              <br>
+              myfunc()
+            </code>
+            <p>A variable created in the main body of the Python code is a global variable and belongs to the global scope.<br>
+              Global variables are available from within any scope, global and local.</p>
+            <code>
+              x = 300<br>
+              def myfunc():<br>
+              &nbsp; print(x)<br>
+              myfunc()<br>
+              print(x)
+            </code>
+          </article>
+        </section>
+        <section class="main-section" id="Conditional_Statements">
+          <header>Conditional Statements</header>
+          <article>
+          </article>
+        </section>
+        <section class="main-section" id="While_Loop">
+          <header>While Loop</header>
+          <article>
+            <p>Python supports the usual logical conditions from mathematics:</p>
+            <ul>
+              <li>Equals: a == b</li>
+              <li>Less than: a < b</li>
+              <li>Less than or equal to: a <= b</li>
+              <li>Greater than: a > b</li>
+              <li>Greater than or equal to: a >= b</li>
+            </ul>
+            <code>
+              a = 33<br>
+              b = 200<br>
+              if b > a:<br>
+              &nbsp; print("b is greater than a.") &nbsp; &nbsp; # you will get an error<br>
+              else:<br>
+              &nbsp; print("b is equal to or less than a.")
+            </code>
+          </article>
+        </section>
+        <section class="main-section" id="For_Loop">
+          <header>For Loop</header>
+          <article>
+            <p>
+              A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+              This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+              With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+            </p>
+            <code>
+              fruits = ["apple", "banana", "cherry"]<br>
+              for x in fruits:<br>
+              &nbsp; print(x)<br>
+              if x == "banana":<br>
+              &nbsp; break
+            </code>
+          </article>
+        </section>
+        <section class="main-section" id="List">
+          <header>List</header>
+          <article>
+            <p>
+              Lists are used to store multiple items in a single variable.
+              Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+              Lists are created using square brackets:
+            </p>
+            <code>
+              thislist = ["apple", "banana", "cherry"]<br>
+              print(thislist)
+            </code>
+            <p>Lists allows duplicate values.</p>
+            <code>
+              thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+              print(thislist)
+            </code>
+          </article>
+        </section>
+        <section class="main-section" id="Dictionary">
+          <header>Dictionary</header>
+          <article>
+            <p>
+              Dictionaries are used to store data values in key:value pairs.
+              A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+              Dictionaries are written with curly brackets, and have keys and values:
+            </p>
+            <div class="imp">Important: As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.</div>
+            <code>
+              thisdict = {<br>
+              &nbsp;  "brand": "Ford",<br>
+              &nbsp;  "model": "Mustang",<br>
+              &nbsp;  "year": 1964<br>
+              }<br>
+              print(thisdict)
+            </code>
+          </article>
+        </section>
+        <section class="main-section" id="Tuple">
+          <header>Tuple</header>
+          <article>
+            <p>
+              Tuples are used to store multiple items in a single variable.
+              Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+              Tuples are written with round brackets.
+            </p>
+            <div class="imp">Important: A tuple is a collection which is ordered and unchangeable.</div>
+            <code>
+              thistuple = ("apple", "banana", "cherry")<br>
+              print(thistuple)
+            </code>
+          </article>
+        </section>
+        <section class="main-section" id="Sets">
+          <header>Sets</header>
+          <article>
+            <p>
+              Sets are used to store multiple items in a single variable.
+              Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.
+            </p>
+            <div class="imp">Important: A set is a collection which is unordered, unchangeable*, and unindexed.</div>
+            <div class="imp">Important: Set items are unchangeable, but you can remove items and add new items.</div>
+            <code>
+              thisset = {"apple", "banana", "cherry"}<br>
+              print(thisset)
+            </code>
+          </article>
+        </section>
+        <footer>
+          <p>Created by <a href="https://github.com/saturnextreme" target="_blank" class="footer-anchor">Aashay Metekar</a></p>
+          <p>Project on FreeCodeCamp</p>
+          <p>Credits: W3school, FreeCodeCamp</p>
+        </footer>
+      </main>
+    </section>
+  </body>
+</html>
